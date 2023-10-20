@@ -44,10 +44,19 @@
   <div class="text-center" id="container" >
     
     <img class="img-fluid"  id="banner" src="http://career-website-deneme.muratayar.repl.co/static/banner.jpg" >
-    <h2>About Me</h2>
-    <p class="text-center lead" style="margin-left: 10%; margin-right:10%;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <h2 class="text-center" class="mt-4 mb-4">Job List</h2>
+    <h2 style="margin-top:50px;margin-bottom:20px">About Me</h2>
+    <div class="row">
+      <div class="col-6">
+        <h5>Education</h5>
+        <p class="text-center lead" style="margin-left: 10%; margin-right:10%;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+      </div>
+      <div class="col-6">
+        <img class="img-fluid" style="width:90%" src="http://career-website-deneme.muratayar.repl.co/static/sabanci_uni.jpg">
+      </div>
+    </div>
+    
+    <h2 class="text-center" style="margin-top:50px;margin-bottom:20px" class="mt-4 mb-4">Job List</h2>
     <p class="bodytext">
       {% for job in jobs %}
         {% include 'jobitem.html' %}
