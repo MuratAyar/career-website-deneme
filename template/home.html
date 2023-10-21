@@ -5,6 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Career Website</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <style>
@@ -12,25 +15,45 @@
       height: 360px;
       width: 100%;
       object-fit: cover;
-      
     }
   </style>
-  <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 <body>
+  <div class="first-background"></div>
   {% include 'nav.html' %}
+
+  <div>
+    <h1 class="img-fluid rounded text-add-big-border" style="margin-top:200px;margin-bottom:100px;margin-left:5%;max-width: fit-content;font-size: 100px" >Hello World, My Name Is=</h1>
+  </div>
+  <div>
+    <h1 class="img-fluid rounded text-add-big-border" style="margin-top:100px;margin-bottom:100px;margin-left:5%;max-width: fit-content;font-size: 200px" >"Murat Ayar"</h1>
+  </div>
+  <div>
+    <h1 class="img-fluid rounded text-add-big-border" style="margin-top:125px;margin-bottom:100px;margin-left:5%;max-width: fit-content;font-size: 150px; color:#CCCCCC;" >I develop software</h1>
+  </div>
+  
   <div class="text-center" id="container" >
-    
-    <img class="img-fluid"  id="banner" src="http://career-website-deneme.muratayar.repl.co/static/banner.jpg" >
-    <h2 style="margin-top:50px;margin-bottom:20px">About Me</h2>
+    <h1 class="img-fluid rounded mx-auto text-center text-background-blur" style="max-width: fit-content; ">v About Me v</h1>
     <div class="row">
-      <div class="col-md-6">
-        <h5>Education</h5>
-        <p class="yazi-stilim" style="margin-left: 10%; margin-right:10%;" >Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="col-md-6" style="padding-left:5%; padding-right:5%">
+        <h1 class="img-fluid rounded mx-auto text-center text-background-blur " style="max-width: fit-content;">Education</h1>
+        <p class="img-fluid rounded mx-auto text-center text-background-blur " style="max-width: fit-content;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo CONSEQUAT. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </p>
       </div>
       <div class="col-md-6 d-flex align-items-center">
         <img class="img-fluid rounded mx-auto text-center" style="width:80%;" src="http://career-website-deneme.muratayar.repl.co/static/sabanci_uni.jpg">
+      </div>
+    </div>
+
+    <div class="row" style="margin-top:100px">
+      <div class="col-md-6 d-flex align-items-center">
+        <img class="img-fluid rounded mx-auto text-center" style="width:80%;" src="http://career-website-deneme.muratayar.repl.co/static/sabanci_uni.jpg">
+      </div>
+      <div class="col-md-6" style="padding-left:5%; padding-right:5%">
+        <h1 class="img-fluid rounded mx-auto text-center text-background-blur " style="max-width: fit-content;">Education</h1>
+        <p class="img-fluid rounded mx-auto text-center text-background-blur " style="max-width: fit-content;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo CONSEQUAT. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
       </div>
     </div>
     
