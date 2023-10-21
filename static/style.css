@@ -6,7 +6,6 @@
 body{
   width:100%;
   height:100%;
-  background-image:url('http://career-website-deneme.muratayar.repl.co/static/background_image.jpg');
   background-repeat: no-repeat;
   background-attachment:fixed;
   background-size:100%;
@@ -28,7 +27,7 @@ body{
   backdrop-filter: blur(5px) brightness(85%) saturate(70%);
 }
 
-h1 { font-family: 'Pixelify Sans', sans-serif; font-size: 45px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 56px; color:white;} 
+h1 { font-family: 'Pixelify Sans', sans-serif; font-size: 45px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 90px; color:white;} 
 h3 { font-family: 'Pixelify Sans', sans-serif; font-size: 35px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 56px; color:white;} 
 p { font-family: 'Pixelify Sans', sans-serif; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 35px; color:white;} 
 h5{font-family: 'Pixelify Sans', sans-serif; font-size: 30px; font-style: normal; font-variant: normal; font-weight: 500; line-height: 35px; color:gray;} 

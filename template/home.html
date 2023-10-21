@@ -19,22 +19,22 @@
   </style>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
-<body>
+<body style="background-image:url('http://career-website-deneme.muratayar.repl.co/static/bg_2.jpg');">
   <div class="first-background"></div>
   {% include 'nav.html' %}
 
   <div>
-    <h1 class="img-fluid rounded text-add-big-border" style="margin-top:200px;margin-bottom:100px;margin-left:5%;max-width: fit-content;font-size: 100px" >Hello World, My Name Is=</h1>
+    <h1 class="img-fluid rounded text-add-big-border" style="margin-top:200px;margin-bottom:100px;margin-left:5%;max-width: fit-content;font-size: 100px" >Hello World, My Name Is</h1>
   </div>
   <div>
-    <h1 class="img-fluid rounded text-add-big-border" style="margin-top:100px;margin-bottom:100px;margin-left:5%;max-width: fit-content;font-size: 200px" >"Murat Ayar"</h1>
+    <h1 class="img-fluid rounded text-add-big-border" style="margin-top:100px;margin-bottom:100px;margin-left:5%;max-width: fit-content;font-size: 200px;line-height: 120px;" >Murat Ayar</h1>
   </div>
   <div>
-    <h1 class="img-fluid rounded text-add-big-border" style="margin-top:125px;margin-bottom:100px;margin-left:5%;max-width: fit-content;font-size: 150px; color:#CCCCCC;" >I develop software</h1>
+    <h1 id="AboutMe" class="img-fluid rounded text-add-big-border" style="margin-top:125px;margin-bottom:100px;margin-left:5%;max-width: fit-content;font-size: 150px; color:#CCCCCC;line-height: 120px;" >I develop software</h1>
   </div>
   
   <div class="text-center" id="container" >
-    <h1 class="img-fluid rounded mx-auto text-center text-background-blur" style="max-width: fit-content; ">v About Me v</h1>
+    <h1 class="img-fluid rounded mx-auto text-center text-background-blur" style="max-width: fit-content; ">v Who am I v</h1>
     <div class="row">
       <div class="col-md-6" style="padding-left:5%; padding-right:5%">
         <h1 class="img-fluid rounded mx-auto text-center text-background-blur " style="max-width: fit-content;">Education</h1>
@@ -46,26 +46,30 @@
       </div>
     </div>
 
-    <div class="row" style="margin-top:100px">
+    <div class="row" style="margin-top:150px">
       <div class="col-md-6 d-flex align-items-center">
-        <img class="img-fluid rounded mx-auto text-center" style="width:80%;" src="http://career-website-deneme.muratayar.repl.co/static/sabanci_uni.jpg">
+        <img class="img-fluid rounded mx-auto text-center" style="width:70%;" src="http://career-website-deneme.muratayar.repl.co/static/vision_and_mission.jpg">
       </div>
       <div class="col-md-6" style="padding-left:5%; padding-right:5%">
-        <h1 class="img-fluid rounded mx-auto text-center text-background-blur " style="max-width: fit-content;">Education</h1>
+        <h1 class="img-fluid rounded mx-auto text-center text-background-blur " style="max-width: fit-content;">Vision & Mission</h1>
         <p class="img-fluid rounded mx-auto text-center text-background-blur " style="max-width: fit-content;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo CONSEQUAT. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
+        </p>
       </div>
     </div>
+    <div id="WorkExperience"></div>
     
-    <h2 class="text-center" style="margin-top:50px;margin-bottom:20px" class="mt-4 mb-4">Job List</h2>
+    <h1 class="img-fluid rounded mx-auto text-center text-background-blur" style="margin-top:150px;max-width: fit-content; ">v Job List v</h1>
     <p class="bodytext">
       {% for job in jobs %}
         {% include 'jobitem.html' %}
       {% endfor %}
     </p>
     <div style="text-align:center;">
-      <a type="button" class="btn btn-primary" href="mailto:ayar.murat55@gmail.com?subject=Application for {{jobs[0]['title']}}" >Contact Us!</a>
-      <p class="mt-4">Copyright 2023, Murat</p>
+      <h1 class="img-fluid rounded text-add-big-border text-center" style=";margin-bottom:0px;font-size: 100px" >.</h1>
+      <h1 class="img-fluid rounded text-add-big-border text-center" style="margin-top:-50px;margin-bottom:0px;font-size: 100px" >.</h1>
+      <h1 class="img-fluid rounded text-add-big-border text-center" style="margin-top:-50px;margin-bottom:150px;font-size: 100px" >.</h1>
+      <a type="button" class="btn btn-primary" href="mailto:ayar.murat55@gmail.com?subject=Hello!"><h5 class="text-center" style="color:white;">Contact Me!</h5></a>
+      <p class="mt-4 text-add-border">Copyright 2023, Murat</p>
     </div>     
   </div>
   {% include 'footer.html' %}

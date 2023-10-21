@@ -1,18 +1,20 @@
-<div class="border-bottom row" style="margin-bottom:16px; padding-bottom:8px; margin-left:10%; margin-right:10%;">
-  <div class="col-9" style="text-align:left;">
-    <h5 style="color:rgb(120,120,120); margin-bottom:4px;">
+<div class="border-bottom border-light border-5 row" style="margin-bottom:16px; padding-bottom:8px; margin-left:10%; margin-right:10%;">
+  <div class="col-4" style="text-align:left;">
+    <h1 class="img-fluid rounded mx-auto text-center text-add-big-border" style="max-width: fit-content;">
       {{job['title']}}
-    </h5>
+    </h1>
     <div>
-      <b>Location: </b>{{job['location']}}
+      <h5 class="img-fluid rounded mx-auto text-center text-add-border text-background-blur" style="max-width: fit-content;color:white;">Position: {{job['position']}}</h5>
     </div>
-    {% if 'salary' in job %}
     <div>
-      <b>Salary: </b>{{job['salary']}}
+      <h5 class="img-fluid rounded mx-auto text-center text-add-border text-background-blur" style="max-width: fit-content;color:white;">Location: {{job['location']}}</h5>
     </div>
-    {% endif %}
   </div>
-  <div class="col-3">
-    <button type="button" class="btn btn-outline-primary" style="text-align:rigth;">Apply</button>
+    <div class="col-8">
+      <h5 class="img-fluid rounded mx-auto text-center text-add-border" style="max-width: fit-content;color:white;" >Description: </h5><p class="img-fluid rounded mx-auto text-center text-background-blur " style="max-width: fit-content;">{{job['description']}}</p>
+    </div>
+  <div>
+    <button type="button" style="margin-top:20px;margin-bottom:10px;" class="btn btn-warning btn-lg text-add-border"><h5 class="text-center" style="color:white;">More Info</h5></button>
   </div>
 </div>
+  
